@@ -17,7 +17,7 @@ BiSegMamba is an efficient 3D medical image segmentation framework designed to b
 
 ## 🎉 News
 
-- **2026.05:** BiSegMamba preprint is available on arXiv.
+- **2026.05:** BiSegMamba preprint is available on [arXiv](https://arxiv.org/pdf/2605.30972).
 - **2026.05:** Code and pretrained checkpoints are released for reproducibility.
 
 ---
