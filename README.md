@@ -11,22 +11,18 @@ BiSegMamba is an efficient 3D medical image segmentation framework designed to b
   <img src="assets/bisegmamba_overview.png" width="850">
 </p>
 
-<p align="center">
-  <b>Overview of BiSegMamba.</b> The framework uses progressive compacting, multi-scale spatial mixing, bidirectional tri-oriented Ortho Mamba blocks, and adaptive directional fusion for efficient volumetric segmentation.
-</p>
-
 > **Note:** This repository is intended for academic research and reproducibility. Dataset files and private clinical data are not included.
 
 ---
 
-## News
+## ⬇️ News
 
 - **2026.05:** BiSegMamba preprint is available on arXiv.
 - **2026.05:** Code and pretrained checkpoints are released for reproducibility.
 
 ---
 
-## Repository Structure
+## 🗂️ Repository Structure
 
 ```text
 BiSegMamba/
@@ -86,7 +82,7 @@ The core BiSegMamba design is kept consistent across all datasets. However, smal
 
 ---
 
-## Supported Datasets
+## 📊 Supported Datasets
 
 | Dataset | Task | Pipeline | Download / Access | Notes |
 |---|---|---|---|---|
@@ -118,7 +114,7 @@ Please download the checkpoint corresponding to the dataset you want to reproduc
 
 ---
 
-## Environment Installation
+## ⚙️ Environment Installation
 
 Create a conda environment:
 
