@@ -16,15 +16,20 @@ This repository provides preprocessing, training, inference, and evaluation pipe
 
 ---
 
-## Highlights
+## Model Variants and Dataset-Specific Settings
 
-- **BiSegMamba model** for 3D medical image segmentation.
-- **BraTS 2023 pipeline** with dataset renaming, preprocessing, training, prediction, and metric computation scripts.
-- **nnFormer-style pipeline** for additional datasets including ACDC, AMOS, and Carotid CTA.
-- **Sliding-window inference** for large 3D volumes.
-- **Dataset-specific training and evaluation scripts** for easy reproduction.
-- Modular code organization for extending the framework to new 3D segmentation datasets.
+The core BiSegMamba architecture is kept consistent across all datasets. Specifically, all dataset-specific implementations follow the same overall compact-to-detail segmentation design, including progressive feature compacting, multi-scale spatial/context modeling, bidirectional tri-oriented Mamba modeling, adaptive directional fusion, and decoder-based reconstruction.
 
+However, small dataset-specific adjustments are used to better match the image resolution, anatomical target, number of classes, and memory requirements of each benchmark. These settings were selected carefully after a series of controlled experiments for each dataset.
+
+| Dataset | Architecture file | Dataset-specific adjustment |
+|---|---|---|
+| BraTS 2023 | `brats2023/model_bisegmamba/BiSegMamba.py` | BraTS-specific pipeline for multi-modal brain tumor segmentation. |
+| ACDC | `other_datasets/BiSegMamba/network_architecture/acdc/BiSegMamba_acdc.py` | Uses the same BiSegMamba backbone with ACDC-specific anisotropic downsampling/upsampling settings for cardiac MRI. |
+| AMOS-CT | `other_datasets/BiSegMamba/network_architecture/amos/BiSegMamba_amos.py` | Uses the same BiSegMamba backbone with AMOS-specific early hybrid spatial/context blocks for abdominal multi-organ CT segmentation. |
+| Carotid CTA | `other_datasets/BiSegMamba/network_architecture/carotid/BiSegMamba_carotid.py` | Uses the same BiSegMamba backbone with carotid-specific decoder/skip-refinement adjustments for thin vascular structure segmentation. |
+
+> **Note:** These dataset-specific files do not represent different proposed methods. They are carefully selected implementations of the same BiSegMamba design, adjusted for dataset resolution, organ scale, class number, and GPU-memory constraints.
 ---
 
 ## Repository Structure
