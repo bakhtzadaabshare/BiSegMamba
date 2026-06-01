@@ -71,12 +71,12 @@ BiSegMamba/
 
 ## Supported Datasets
 
-| Dataset | Task | Pipeline |
-|---|---|---|
-| BraTS 2023 | Brain tumor segmentation | `brats2023/` |
-| AMOS | Multi-organ abdominal segmentation | `other_datasets/` |
-| ACDC | Cardiac segmentation | `other_datasets/` |
-| Carotid CTA | Carotid artery segmentation | `other_datasets/` |
+| Dataset | Task | Pipeline | Download / Access | Notes |
+|---|---|---|---|---|
+| BraTS 2023 | Brain tumor segmentation | `brats2023/` | [Official BraTS 2023 Synapse page](https://www.synapse.org/#!Synapse:syn51156910) | Users may need a Synapse account and must follow BraTS data-use terms. Public mirror links are also listed in the [SegMamba-V2 repository](https://github.com/ge-xing/SegMamba-V2). |
+| ACDC | Cardiac MRI segmentation | `other_datasets/` | [Official ACDC dataset page](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html) | Use the official training dataset and cite the ACDC challenge paper. |
+| AMOS-CT | Abdominal multi-organ CT segmentation | `other_datasets/` | [Official AMOS Zenodo page](https://zenodo.org/records/7262581) | This work uses the CT subset for abdominal multi-organ segmentation. |
+| Carotid CTA | Carotid artery segmentation | `other_datasets/` | Not publicly available | Private in-house clinical dataset; not distributed with this repository. |
 
 ---
 
