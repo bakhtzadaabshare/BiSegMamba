@@ -324,4 +324,4 @@ This codebase is developed for research in 3D biomedical image segmentation. The
 
 ## Contact
 
-For questions or collaboration, please open an issue in this repository or contact the authors.
+For questions or collaboration, please open an issue in this repository or contact the authors at bakhtzada8c@gmail.com.
