@@ -91,10 +91,10 @@ Pretrained checkpoints will be provided to support reproducibility. After downlo
 
 | Dataset | Checkpoint | Download | Inference script | Notes |
 |---|---|---|---|---|
-| BraTS 2023 | BiSegMamba-BraTS2023 | Coming soon | `brats2023/4_predict.py` | Public benchmark checkpoint. |
-| ACDC | BiSegMamba-ACDC | Coming soon | `other_datasets/BiSegMamba/inference_acdc.py` | Public benchmark checkpoint. |
-| AMOS-CT | BiSegMamba-AMOS-CT | Coming soon | `other_datasets/BiSegMamba/inference_amos.py` | Public benchmark checkpoint. |
-| Carotid CTA | BiSegMamba-Carotid | Not publicly released | `other_datasets/BiSegMamba/inference_carotid.py` | Not released because the dataset is private clinical data. |
+| BraTS 2023 | BiSegMamba-BraTS2023 | [Download](https://drive.google.com/file/d/1RhqJmJU5xAr3CfBhJcx28oScmD_3K2y_/view?usp=drive_link) | `brats2023/4_predict.py` | Public benchmark checkpoint. |
+| Amos-CT | BiSegMamba-Amos22 | [Download](https://drive.google.com/file/d/1VU27dXEcliay-v5--TJp38g1EJqncOQs/view?usp=drive_link) | `brats2023/4_predict.py` | Public benchmark checkpoint. |
+| ACDC | BiSegMamba-ACDC | [Download](https://drive.google.com/file/d/1VU27dXEcliay-v5--TJp38g1EJqncOQs/view?usp=drive_link)| `other_datasets/BiSegMamba/inference_acdc.py` | Public benchmark checkpoint. |
+| Carotid CTA | BiSegMamba-Carotid | [Download](https://drive.google.com/file/d/1e7m50zafbRVfOnHoDUmUt8LBAY1Kg4di/view?usp=drive_link) | `other_datasets/BiSegMamba/inference_carotid.py` | Not released because the dataset is private clinical data. |
 
 ---
 
