@@ -85,34 +85,16 @@ BiSegMamba/
 
 ---
 
-## Environment Installation
+## Pretrained Weights
 
-Create a new environment:
+Pretrained checkpoints will be provided to support reproducibility. After downloading a checkpoint, update the corresponding checkpoint path in the inference script before running prediction.
 
-```bash
-conda create -n bisegmamba python=3.10 -y
-conda activate bisegmamba
-```
-
-Install PyTorch according to your CUDA version from the official PyTorch instructions. For example:
-
-```bash
-pip install torch torchvision torchaudio
-```
-
-Install commonly required packages:
-
-```bash
-pip install monai SimpleITK nibabel medpy numpy scipy scikit-image scikit-learn tqdm einops batchgenerators
-```
-
-If your model version uses Mamba/SSM operators, install the compatible packages for your CUDA/PyTorch version:
-
-```bash
-pip install causal-conv1d mamba-ssm
-```
-
-> The exact CUDA, PyTorch, `causal-conv1d`, and `mamba-ssm` versions should be kept consistent with your local GPU/server environment.
+| Dataset | Checkpoint | Download | Inference script | Notes |
+|---|---|---|---|---|
+| BraTS 2023 | BiSegMamba-BraTS2023 | Coming soon | `brats2023/4_predict.py` | Public benchmark checkpoint. |
+| ACDC | BiSegMamba-ACDC | Coming soon | `other_datasets/BiSegMamba/inference_acdc.py` | Public benchmark checkpoint. |
+| AMOS-CT | BiSegMamba-AMOS-CT | Coming soon | `other_datasets/BiSegMamba/inference_amos.py` | Public benchmark checkpoint. |
+| Carotid CTA | BiSegMamba-Carotid | Not publicly released | `other_datasets/BiSegMamba/inference_carotid.py` | Not released because the dataset is private clinical data. |
 
 ---
 
