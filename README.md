@@ -4,6 +4,14 @@ Official PyTorch implementation of **BiSegMamba**, a Mamba-based framework for e
 
 This repository provides preprocessing, training, inference, and evaluation pipelines for volumetric medical image segmentation, with support for **BraTS 2023**, **AMOS**, **ACDC**, and **Carotid CTA** experiments.
 
+<p align="center">
+  <img src="assets/bisegmamba_overview.png" width="850">
+</p>
+
+<p align="center">
+  <b>Overview of BiSegMamba.</b> The framework combines progressive compacting, multi-scale spatial mixing, bidirectional tri-oriented Mamba modeling, and adaptive directional fusion for efficient 3D medical image segmentation.
+</p>
+
 > **Note:** This code is intended for academic research and reproducibility. Dataset files and clinical data are not included in this repository.
 
 ---
