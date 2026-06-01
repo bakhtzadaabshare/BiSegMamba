@@ -15,7 +15,7 @@ BiSegMamba is an efficient 3D medical image segmentation framework designed to b
 
 ---
 
-## ⬇️ News
+## 🎉 News
 
 - **2026.05:** BiSegMamba preprint is available on arXiv.
 - **2026.05:** Code and pretrained checkpoints are released for reproducibility.
@@ -67,7 +67,7 @@ BiSegMamba/
 
 ---
 
-## Model Implementations
+##🧠 Model Implementations
 
 The core BiSegMamba design is kept consistent across all datasets. However, small dataset-specific settings are used to match image resolution, anatomical scale, class number, and GPU-memory requirements. These settings were selected after a series of controlled experiments for each dataset.
 
@@ -95,7 +95,7 @@ The core BiSegMamba design is kept consistent across all datasets. However, smal
 
 ---
 
-## Pretrained Weights
+## ⬇️ Pretrained Weights
 
 All released pretrained checkpoints are provided in one Google Drive root directory:
 
@@ -156,7 +156,7 @@ The two pipelines have different script organization, so please follow the corre
 
 ---
 
-## BraTS 2023 Workflow
+## 🔍 BraTS 2023 Workflow
 
 The BraTS 2023 pipeline follows this order:
 
@@ -227,7 +227,7 @@ save_path
 
 ---
 
-## ACDC, AMOS-CT, and Carotid CTA Workflow
+## 🔍 ACDC, AMOS-CT, and Carotid CTA Workflow
 
 For non-BraTS datasets, this repository follows an **nnFormer-style preprocessing and evaluation pipeline**. The full order is:
 
@@ -373,7 +373,7 @@ The exact metric script should be configured according to the dataset. Please up
 
 ---
 
-## Important Notes
+## 📌 Important Notes
 
 - Replace all dataset-specific absolute paths in scripts with your local paths before running.
 - Public datasets are not redistributed in this repository.
@@ -383,7 +383,7 @@ The exact metric script should be configured according to the dataset. Please up
 
 ---
 
-## Citation
+## 📝 Citation
 
 If you find this repository useful, please cite our work:
 
@@ -401,13 +401,13 @@ If you find this repository useful, please cite our work:
 
 ---
 
-## Acknowledgement
+## 🙏 Acknowledgement
 
 This codebase is developed for research in 3D biomedical image segmentation. The implementation style and experimental pipeline are inspired by widely used medical segmentation repositories, including nnU-Net, nnFormer, MONAI, SegMamba, SegMamba-V2, and UNETR++.
 
 ---
 
-## Contact
+## 📬 Contact
 
 For questions, please open an issue in this repository or contact the authors at:
 
