@@ -293,7 +293,6 @@ bash evaluation_scripts/run_evaluation_carotid.sh
 - [ ] Add complete environment file.
 - [ ] Add example dataset JSON templates.
 - [ ] Add model architecture figure.
-- [ ] Add arXiv/TMI paper link after public release.
 
 ---
 
@@ -302,11 +301,14 @@ bash evaluation_scripts/run_evaluation_carotid.sh
 If you find this repository useful, please cite our work:
 
 ```bibtex
-@article{muhammad2026bisegmamba,
-  title   = {BiSegMamba: Mamba-based 3D Medical Image Segmentation},
-  author  = {Muhammad, Yar and others},
-  journal = {arXiv preprint arXiv:xxxx.xxxxx},
-  year    = {2026}
+@misc{zada2026bisegmambaefficientbidirectionaltrioriented,
+      title={BiSegMamba: Efficient Bidirectional Tri-Oriented Mamba for 3D Medical Image Segmentation}, 
+      author={Bakht Zada and Chao Tong and Qile Su and Shuai Zhang},
+      year={2026},
+      eprint={2605.30972},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.30972}, 
 }
 ```
 
